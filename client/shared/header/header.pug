@@ -1,0 +1,28 @@
+header.navbar-fixed-top
+  .container
+    .row
+      .header_top
+        .col-md-4.md4-col-cust
+          .logo_img
+            a(href='#home', du-smooth-scroll='')
+              img(src='public/img/header-logo.png', alt='logoimage')
+        .col-md-8.md8-col-cust
+          .menu_bar
+            nav.navbar.navbar-default(role='navigation')
+              .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+              #navbar.collapse.navbar-collapse
+                ul.nav.navbar-nav
+                  li
+                    a(href='#home', du-smooth-scroll='') Home
+                  li
+                    a(href='#features', du-smooth-scroll='') Features
+                  li
+                    a(href='#services', du-smooth-scroll='') Services
+                  li
+                    a(href='#testimonial', du-smooth-scroll='') Testimonial
+                  li
+                    a(href='#contact', du-smooth-scroll='') Contact

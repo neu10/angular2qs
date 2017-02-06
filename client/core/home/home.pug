@@ -1,0 +1,182 @@
+section#home.top_banner_bg.secondary-bg
+  .container
+    .row
+      .col-md-12
+        .top_banner
+        .col-md-6
+          .present
+            h1 Steamy - Blah blah
+            .section_btn
+              .col-md-9(style='padding-top: 20px')
+                a(href='#')
+                  img(src='public/img/google-play-badge.svg')
+        .col-md-1
+        .col-md-4
+          .device-mockup.iphone6_plus.portrait.white.wow.slideInRight(data-wow-duration='1.5s')
+            .device
+              .screen
+                img.img-responsive(src='public/img/image-1.png', alt='')
+              .button
+section#features.primary-bg
+  .container
+    .row
+      .col-md-12
+        .section_heading
+          h2  AWESOME FEATURES
+          h4
+            | Steamy offers a wide range of features with Lorem Ipsum. Lorem Ipsum is simply dummy text
+        .col-md-6
+          .features_detail
+            ul
+              li
+                i.fa.fa-cutlery(aria-hidden='true')
+                h5  Dine-in
+                |  Contrary to popular belief, Lorem Ipsum is not simply random text.
+              li
+                i.fa.fa-paperclip(aria-hidden='true')
+                h5 Pre-order
+                |  Contrary to popular belief, Lorem Ipsum is not simply random text.
+              li
+                i.fa.fa-camera(aria-hidden='true')
+                h5  Reservations
+                |  Contrary to popular belief, Lorem Ipsum is not simply random text.
+              li
+                i.fa.fa-car(aria-hidden='true')
+                h5  Delivery
+                |  Contrary to popular belief, Lorem Ipsum is not simply random text.
+        .col-md-6
+          .features_img.pull-left.wow.slideInRight(data-wow-duration='.75s')
+            img(src='public/img/features_img.png', alt='image')
+section#services.padding_bottom_none.our_service_bg
+  .container
+    .row
+      .col-md-12
+        .section_heading.section_heading_2
+          h2  Our Services
+          h4
+            | Steamy providing a best services which help you to make your life simpler. Lorem Ipsum is simply dummy text
+        .col-md-5.pull-right
+          .services_detail
+            ul
+              li
+                a(href='#')
+                  span
+                    i.fa.fa-html5(aria-hidden='true')
+                  h5  HTML5 &amp; CSS3
+                p  Contrary to popular belief, Lorem Ipsum is not simply random text.
+              li
+                a(href='#')
+                  span
+                    i.fa.fa-desktop(aria-hidden='true')
+                  h5  Fully Reponsive
+                p  Contrary to popular belief, Lorem Ipsum is not simply random text.
+              li
+                a(href='#')
+                  span
+                    i.fa.fa-rocket(aria-hidden='true')
+                  h5  Unlimited Support
+                p  Contrary to popular belief, Lorem Ipsum is not simply random text.
+        .col-md-7
+          .services_img
+            img(src='public/img/services_img1.png', alt='image-1')
+          .services_img_n
+            img(src='public/img/services_img2.png', alt='image-1')
+section#testimonial.primary-bg
+  .container
+    .row
+      .col-md-12
+        .section_heading
+          h2  Testimonial
+          h4
+            | We ensure quality &amp; support. People love us &amp; we love them. Here goes some simple dummy text.
+        .testimonial_slide
+          .testi_detail
+            .testi_img
+              img(src='public/img/testi_img1.png', alt='image')
+              h5  John Capone
+              p  Web Art Director
+            .testi-text
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi odio, gravida at turpis et, porta bibendum justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi odio, gravida at turpis et, porta bibendum justo.
+section#contact.contact_bg
+  .container
+    .row
+      .col-md-12
+        .section_heading.section_heading_2
+          h2  Contact Us
+          h4
+            | Let drop a line to us &amp; we will be in touch soon. Here goes some simple dummy text. Lorem Ipsum is simply dummy text
+        .col-md-6
+          .contact_form
+            form(novalidate='', ng-submit='contactus(contactForm)')
+              .form-group
+                label
+                  | Full Name :
+                  span *
+                |
+                input#exampleInputEmail11.form-control(type='text', ng-model='contactForm.FName')
+              .form-group
+                label
+                  | Email Address :
+                  span *
+                |
+                input#exampleInputPassword1.form-control(type='text', ng-model='contactForm.email')
+              .form-group
+                label
+                  | Message
+                  span *
+                textarea.form-textarea(ng-model='contactForm.message', rows='3')
+              .section_sub_btn
+                button.btn.btn-default(type='submit')  Send Message
+        .col-md-6
+          .contact_text
+            ul
+              li
+                span
+                  i.fa.fa-home(aria-hidden='true')
+                h5  1234 Street Name, City Name, United States
+              li
+                span
+                  i.fa.fa-envelope-o(aria-hidden='true')
+                h5  contact@domain.com
+              li
+                span
+                  i.fa.fa-phone(aria-hidden='true')
+                h5  (123) 123-45678
+              li
+                span
+                  i.fa.fa-fax(aria-hidden='true')
+                h5  (123) 123-45678
+section.primary-bg
+  .container
+    .row
+      .col-md-12
+        .col-md-4
+          .subscribe
+            h3  Stay informed with our newsletter
+            h6  Subscribe to our email newsletter for useful tips and resources.
+            .subscribe_form
+              form(ng-submit='subscribe(subEmail)')
+                .form-group
+                  input#exampleInputEmail1.form-control(type='email', ng-model='subEmail', placeholder='Email Address')
+                .section_sub_btn
+                  button.btn.btn-default(type='submit')  Subscribe
+        .col-md-4
+          .device-mockup.nexus7.portrait.white
+            .device
+              .screen
+                img.img-responsive(src='public/img/image-1.png', alt='')
+              .button
+        .col-md-4
+          .subscribe
+            h3  Download App Now
+            h6  Select your device platform and get download started
+            .section_btn
+              button.btn.btn-default(type='submit')
+                i.fa.fa-apple(aria-hidden='true')
+                |  App Store
+              |
+              span
+                button.btn.btn-default(type='submit')
+                  i.fa.fa-android(aria-hidden='true')
+                  |  Play Store

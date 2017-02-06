@@ -1,0 +1,7 @@
+.idea
+node_modules
+jspm_packages
+npm-debug.*
+_temp
+/_dist/
+.DS_Store
