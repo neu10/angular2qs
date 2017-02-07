@@ -26,7 +26,7 @@ We recommend [nvm](https://github.com/creationix/nvm) for managing multiple vers
 
 Clone this repo into new project folder (e.g., `my-proj`).
 ```bash
-https://github.com/neu10/angular2qs.git  my-proj
+git clone https://github.com/neu10/angular2qs.git  my-proj
 cd my-proj
 ```
 
