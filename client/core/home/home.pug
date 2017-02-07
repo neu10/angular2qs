@@ -110,16 +110,10 @@ section#contact.contact_bg
           .contact_form
             form(novalidate='', ng-submit='contactus(contactForm)')
               .form-group
-                label
-                  | Full Name :
-                  span *
-                |
+                label Full Name : span *
                 input#exampleInputEmail11.form-control(type='text', ng-model='contactForm.FName')
               .form-group
-                label
-                  | Email Address :
-                  span *
-                |
+                label Email Address : span *
                 input#exampleInputPassword1.form-control(type='text', ng-model='contactForm.email')
               .form-group
                 label
@@ -174,8 +168,7 @@ section.primary-bg
             .section_btn
               button.btn.btn-default(type='submit')
                 i.fa.fa-apple(aria-hidden='true')
-                |  App Store
-              |
+                |  App Store 
               span
                 button.btn.btn-default(type='submit')
                   i.fa.fa-android(aria-hidden='true')

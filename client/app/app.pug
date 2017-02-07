@@ -1,3 +1,57 @@
-router-outlet(name='header')
+header.navbar-fixed-top
+  .container
+    .row
+      .header_top
+        .col-md-4.md4-col-cust
+          .logo_img
+            a(href='#home', du-smooth-scroll='')
+              img(src='public/img/header-logo.png', alt='logoimage')
+        .col-md-8.md8-col-cust
+          .menu_bar
+            nav.navbar.navbar-default(role='navigation')
+              .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+              #navbar.collapse.navbar-collapse
+                ul.nav.navbar-nav
+                  li
+                    a(href='#home', du-smooth-scroll='') Home
+                  li
+                    a(href='#features', du-smooth-scroll='') Features
+                  li
+                    a(href='#services', du-smooth-scroll='') Services
+                  li
+                    a(href='#testimonial', du-smooth-scroll='') Testimonial
+                  li
+                    a(href='#contact', du-smooth-scroll='') Contact
 router-outlet
-router-outlet(name='footer')
+footer.third-bg
+  .container
+    .row
+      .col-md-12
+        .footer_top
+          h4  Share Us With Your Friends
+          ul
+            li
+              a(href='http://facebook.com/')
+                i.fa.fa-facebook(aria-hidden='true')
+            li
+              a(href='http://twitter.com/')
+                i.fa.fa-twitter(aria-hidden='true')
+            li
+              a(href='http://linkedin.com/')
+                i.fa.fa-linkedin(aria-hidden='true')
+            li
+              a(href='http://google.com/')
+                i.fa.fa-google-plus(aria-hidden='true')
+            li
+              a(href='http://youtu.be/')
+                i.fa.fa-youtube-square(aria-hidden='true')
+            li
+              a(href='https://www.instagram.com')
+                i.fa.fa-instagram(aria-hidden='true')
+  .footer_bottom.fourth-bg
+    p  2017 &copy; Copyright Steamy | All rights Reserved.
+    a.backtop(href='#home', du-smooth-scroll='', du-scroll-duration='10') ^
