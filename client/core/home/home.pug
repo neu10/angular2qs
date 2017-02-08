@@ -108,12 +108,16 @@ section#contact.contact_bg
             | Let drop a line to us &amp; we will be in touch soon. Here goes some simple dummy text. Lorem Ipsum is simply dummy text
         .col-md-6
           .contact_form
-            form(novalidate='', ng-submit='contactus(contactForm)')
+            form(novalidate='', (ngSubmit)='contactus(contactForm)')
               .form-group
-                label Full Name : span *
+                label
+                  | Full Name :
+                  span *
                 input#exampleInputEmail11.form-control(type='text', ng-model='contactForm.FName')
               .form-group
-                label Email Address : span *
+                label
+                  | Email Address :
+                  span *
                 input#exampleInputPassword1.form-control(type='text', ng-model='contactForm.email')
               .form-group
                 label
@@ -168,7 +172,7 @@ section.primary-bg
             .section_btn
               button.btn.btn-default(type='submit')
                 i.fa.fa-apple(aria-hidden='true')
-                |  App Store 
+                |  App Store
               span
                 button.btn.btn-default(type='submit')
                   i.fa.fa-android(aria-hidden='true')

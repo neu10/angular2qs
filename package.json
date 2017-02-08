@@ -17,6 +17,7 @@
   "dependencies": {
     "@angular/common": "~2.4.0",
     "@angular/compiler": "~2.4.0",
+    "@angular/facade": "~2.4.0",
     "@angular/core": "~2.4.0",
     "@angular/forms": "~2.4.0",
     "@angular/http": "~2.4.0",
@@ -38,6 +39,7 @@
     "imagemin-webpack-plugin": "^1.4.4",
     "jquery": "^1.11.3",
     "magnific-popup": "^1.1.0",
+    "ng2-simple-page-scroll": "^2.0.0",
     "node-sass": "^4.5.0",
     "path": "^0.12.7",
     "progress-bar-webpack-plugin": "^1.9.3",

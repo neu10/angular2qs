@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent  {
     name = 'home';
+
+    constructor(){
+
+    }
+  contactus(){
+     alert('contacted thanks');
+  }
 }

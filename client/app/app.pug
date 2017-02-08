@@ -4,7 +4,7 @@ header.navbar-fixed-top
       .header_top
         .col-md-4.md4-col-cust
           .logo_img
-            a(href='#home', du-smooth-scroll='')
+            a(href='#home', myscroll="")
               img(src='public/img/header-logo.png', alt='logoimage')
         .col-md-8.md8-col-cust
           .menu_bar
@@ -17,15 +17,15 @@ header.navbar-fixed-top
               #navbar.collapse.navbar-collapse
                 ul.nav.navbar-nav
                   li
-                    a(href='#home', du-smooth-scroll='') Home
+                    a(myscroll="" href='#home') Home
                   li
-                    a(href='#features', du-smooth-scroll='') Features
+                    a(myscroll="" href='#features') Features
                   li
-                    a(href='#services', du-smooth-scroll='') Services
+                    a(myscroll="" href='#services') Services
                   li
-                    a(href='#testimonial', du-smooth-scroll='') Testimonial
+                    a(href='#testimonial', myscroll='') Testimonial
                   li
-                    a(href='#contact', du-smooth-scroll='') Contact
+                    a(href='#contact', myscroll='') Contact
 router-outlet
 footer.third-bg
   .container
@@ -54,4 +54,4 @@ footer.third-bg
                 i.fa.fa-instagram(aria-hidden='true')
   .footer_bottom.fourth-bg
     p  2017 &copy; Copyright Steamy | All rights Reserved.
-    a.backtop(href='#home', du-smooth-scroll='', du-scroll-duration='10') ^
+    a.backtop(href='#home', myscroll='') ^

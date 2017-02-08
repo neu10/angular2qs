@@ -10,22 +10,9 @@ import { FooterComponent } from '../shared/footer/footer.component';
 // Route Configuration
 export const routes: Routes = [
   {
-        path: '',
-        children: [
-            {
-                path: '',
-                component: HeaderComponent,
-                outlet: 'header',
-            }, {
-                path: '',
-                component: HomeComponent
-            }, {
-                path: '',
-                component: FooterComponent,
-                outlet: 'footer',
-            },
-        ]
-    }
+          path: '',
+           component: HomeComponent
+  }
 ];
 
 @NgModule({
