@@ -983,7 +983,11 @@ section.top_banner_bg:after {
   font-weight: 300;
   color: #fff;
   line-height:76px;
-  padding-bottom:120px;
+  //padding-bottom:120px;
+}
+.present h3 {
+  font-weight: 300;
+  color: #fff;
 }
 .present h5 {
   font-weight: 300;
@@ -996,6 +1000,10 @@ section.top_banner_bg:after {
 .present b {
   color: hsl(42, 93%, 51%);
   font-weight: 700;
+}
+
+.section_btn{
+  margin: 40px 5px 0;
 }
 
 .section_btn .btn.btn-default {
@@ -1101,14 +1109,14 @@ section.top_banner_bg:after {
   border-bottom: 1px solid #bfbfbf;
   border-right: 1px solid #bfbfbf;
   display: inline-block;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 20px;
   list-style: outside none none;
   margin-bottom: 20px;
   padding: 10px 20px 30px 0;
   text-align: right;
-  width: 49%;
+  width: 70%;
   color:#555454;
 }
 

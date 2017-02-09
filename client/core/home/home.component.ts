@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { FormBuilder, Validators } from '@angular/forms';
 @Component({
     selector: 'home',
     styleUrls: [ 'home.scss'],
@@ -7,11 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent  {
     name = 'home';
+  private contacted;
 
-    constructor(){
+    constructor(public fb: FormBuilder){
 
     }
-  contactus(){
-     alert('contacted thanks');
+  contactus(contactForm){
+      this.contacted = true;
+     alert('Thank you for contacting ');
   }
 }

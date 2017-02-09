@@ -1,6 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent }  from './app.component';
 import { MyScrollDirective }  from '../shared/scroll.directive';
 
@@ -8,7 +9,7 @@ import { MyScrollDirective }  from '../shared/scroll.directive';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  imports:      [ BrowserModule, AppRoutingModule],
+  imports:      [ BrowserModule, AppRoutingModule,ReactiveFormsModule,CommonModule],
   declarations: [ AppComponent,MyScrollDirective ],
   bootstrap:    [ AppComponent ]
 })

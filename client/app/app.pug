@@ -5,7 +5,7 @@ header.navbar-fixed-top
         .col-md-4.md4-col-cust
           .logo_img
             a(href='#home', myscroll="")
-              img(src='public/img/header-logo.png', alt='logoimage')
+              span(style='font-family: monospace;color: white;') SIZZLER
         .col-md-8.md8-col-cust
           .menu_bar
             nav.navbar.navbar-default(role='navigation')
@@ -17,13 +17,13 @@ header.navbar-fixed-top
               #navbar.collapse.navbar-collapse
                 ul.nav.navbar-nav
                   li
-                    a(myscroll="" href='#home') Home
+                    a(href='#home', myscroll='') Home
                   li
-                    a(myscroll="" href='#features') Features
+                    a(href='#aboutus', myscroll='') About Us
                   li
-                    a(myscroll="" href='#services') Services
+                    a(href='#services', myscroll='') Services
                   li
-                    a(href='#testimonial', myscroll='') Testimonial
+                    a(href='#features', myscroll='') Features
                   li
                     a(href='#contact', myscroll='') Contact
 router-outlet
@@ -53,5 +53,5 @@ footer.third-bg
               a(href='https://www.instagram.com')
                 i.fa.fa-instagram(aria-hidden='true')
   .footer_bottom.fourth-bg
-    p  2017 &copy; Copyright Steamy | All rights Reserved.
+    p  2017 &copy; Copyright Sizzler | All rights Reserved.
     a.backtop(href='#home', myscroll='') ^

@@ -5,7 +5,8 @@ section#home.top_banner_bg.secondary-bg
         .top_banner
         .col-md-6
           .present
-            h1 Steamy - Blah blah
+            h1 Sizzler App
+            h3 Delivering food with smile.
             .section_btn
               .col-md-9(style='padding-top: 20px')
                 a(href='#')
@@ -17,36 +18,16 @@ section#home.top_banner_bg.secondary-bg
               .screen
                 img.img-responsive(src='public/img/image-1.png', alt='')
               .button
-section#features.primary-bg
+section#aboutus.primary-bg
   .container
     .row
       .col-md-12
         .section_heading
-          h2  AWESOME FEATURES
+          h2  About Us
           h4
-            | Steamy offers a wide range of features with Lorem Ipsum. Lorem Ipsum is simply dummy text
-        .col-md-6
-          .features_detail
-            ul
-              li
-                i.fa.fa-cutlery(aria-hidden='true')
-                h5  Dine-in
-                |  Contrary to popular belief, Lorem Ipsum is not simply random text.
-              li
-                i.fa.fa-paperclip(aria-hidden='true')
-                h5 Pre-order
-                |  Contrary to popular belief, Lorem Ipsum is not simply random text.
-              li
-                i.fa.fa-camera(aria-hidden='true')
-                h5  Reservations
-                |  Contrary to popular belief, Lorem Ipsum is not simply random text.
-              li
-                i.fa.fa-car(aria-hidden='true')
-                h5  Delivery
-                |  Contrary to popular belief, Lorem Ipsum is not simply random text.
-        .col-md-6
-          .features_img.pull-left.wow.slideInRight(data-wow-duration='.75s')
-            img(src='public/img/features_img.png', alt='image')
+            | Introducing for the first time, in our beloved city Kabul, Sizzler App
+          h6
+            | An App meant to gratify your taste buds and cater to the foodie in you, delivering food at your doorstep with smile.
 section#services.padding_bottom_none.our_service_bg
   .container
     .row
@@ -54,50 +35,55 @@ section#services.padding_bottom_none.our_service_bg
         .section_heading.section_heading_2
           h2  Our Services
           h4
-            | Steamy providing a best services which help you to make your life simpler. Lorem Ipsum is simply dummy text
-        .col-md-5.pull-right
+            | Sizzler App blends to the needs of our masses and is obliged to satiate all aspects of our consumers demand.
+        .col-md-6.pull-right
           .services_detail
             ul
               li
                 a(href='#')
                   span
-                    i.fa.fa-html5(aria-hidden='true')
-                  h5  HTML5 &amp; CSS3
-                p  Contrary to popular belief, Lorem Ipsum is not simply random text.
+                    i.fa.fa-language(aria-hidden='true')
+                  h5 Multiple Language support
+                p  Sizzler App is available is Persian, Pashto and English languages.
               li
                 a(href='#')
                   span
                     i.fa.fa-desktop(aria-hidden='true')
-                  h5  Fully Reponsive
-                p  Contrary to popular belief, Lorem Ipsum is not simply random text.
+                  h5 Interactive dashboard
+                p  Easy to use and multilingual dashboard; managing orders have never been this easy.
               li
                 a(href='#')
                   span
-                    i.fa.fa-rocket(aria-hidden='true')
-                  h5  Unlimited Support
-                p  Contrary to popular belief, Lorem Ipsum is not simply random text.
-        .col-md-7
-          .services_img
-            img(src='public/img/services_img1.png', alt='image-1')
-          .services_img_n
-            img(src='public/img/services_img2.png', alt='image-1')
-section#testimonial.primary-bg
+                    i.fa.fa-money(aria-hidden='true')
+                  h5 Cash on Delivery
+                p  Need not worry about online payments, pay when you receive your order.
+        .col-md-6
+          .device-mockup.imac.portrait.white.wow.slideInRight(data-wow-duration='1.5s')
+            .device
+              .screen
+                img.img-responsive(src='public/img/services_img2.png', alt='')
+section#features.primary-bg
   .container
     .row
       .col-md-12
         .section_heading
-          h2  Testimonial
+          h2  AWESOME FEATURES
           h4
-            | We ensure quality &amp; support. People love us &amp; we love them. Here goes some simple dummy text.
-        .testimonial_slide
-          .testi_detail
-            .testi_img
-              img(src='public/img/testi_img1.png', alt='image')
-              h5  John Capone
-              p  Web Art Director
-            .testi-text
-              p
-                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi odio, gravida at turpis et, porta bibendum justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi odio, gravida at turpis et, porta bibendum justo.
+            | Doorstep Delivery
+        .col-md-6
+          .features_detail
+            ul
+              li
+                i.fa.fa-car(aria-hidden='true')
+                h5  Delivery
+                |  Your favorite cuisine is just a few clicks away.
+                |  Log on to our App, order food from your desired restaurant and get it delivered at your doorstep.
+        .col-md-4
+          .device-mockup.iphone6_plus.portrait.black.wow.slideInRight(data-wow-duration='1.5s')
+            .device
+              .screen
+                img.img-responsive(src='public/img/services_img1.png', alt='')
+        .col-md-2
 section#contact.contact_bg
   .container
     .row
@@ -105,10 +91,10 @@ section#contact.contact_bg
         .section_heading.section_heading_2
           h2  Contact Us
           h4
-            | Let drop a line to us &amp; we will be in touch soon. Here goes some simple dummy text. Lorem Ipsum is simply dummy text
+            | Drop us your details and be notified as soon as we launch.
         .col-md-6
           .contact_form
-            form(novalidate='', (ngSubmit)='contactus(contactForm)')
+            form(novalidate='')
               .form-group
                 label
                   | Full Name :
@@ -125,7 +111,7 @@ section#contact.contact_bg
                   span *
                 textarea.form-textarea(ng-model='contactForm.message', rows='3')
               .section_sub_btn
-                button.btn.btn-default(type='submit')  Send Message
+                button.btn.btn-default(type='button', (click)='contactus(contactForm)')  Send Message
         .col-md-6
           .contact_text
             ul
@@ -145,35 +131,35 @@ section#contact.contact_bg
                 span
                   i.fa.fa-fax(aria-hidden='true')
                 h5  (123) 123-45678
-section.primary-bg
-  .container
-    .row
-      .col-md-12
-        .col-md-4
-          .subscribe
-            h3  Stay informed with our newsletter
-            h6  Subscribe to our email newsletter for useful tips and resources.
-            .subscribe_form
-              form(ng-submit='subscribe(subEmail)')
-                .form-group
-                  input#exampleInputEmail1.form-control(type='email', ng-model='subEmail', placeholder='Email Address')
-                .section_sub_btn
-                  button.btn.btn-default(type='submit')  Subscribe
-        .col-md-4
-          .device-mockup.nexus7.portrait.white
-            .device
-              .screen
-                img.img-responsive(src='public/img/image-1.png', alt='')
-              .button
-        .col-md-4
-          .subscribe
-            h3  Download App Now
-            h6  Select your device platform and get download started
-            .section_btn
-              button.btn.btn-default(type='submit')
-                i.fa.fa-apple(aria-hidden='true')
-                |  App Store
-              span
-                button.btn.btn-default(type='submit')
-                  i.fa.fa-android(aria-hidden='true')
-                  |  Play Store
+//section.primary-bg
+//  .container
+//    .row
+//      .col-md-12
+//        .col-md-4
+//          .subscribe
+//            h3  Stay informed with our newsletter
+//            h6  Subscribe to our email newsletter for useful tips and resources.
+//            .subscribe_form
+//              form(ng-submit='subscribe(subEmail)')
+//                .form-group
+//                  input#exampleInputEmail1.form-control(type='email', ng-model='subEmail', placeholder='Email Address')
+//                .section_sub_btn
+//                  button.btn.btn-default(type='submit')  Subscribe
+//        .col-md-4
+//          .device-mockup.imac.portrait.white
+//            .device
+//              .screen
+//                img.img-responsive(src='public/img/image-1.png', alt='')
+//              .button
+//        .col-md-4
+//          .subscribe
+//            h3  Download App Now
+//            h6  Select your device platform and get download started
+//            .section_btn
+//              button.btn.btn-default(type='submit')
+//                i.fa.fa-apple(aria-hidden='true')
+//                |  App Store
+//              span
+//                button.btn.btn-default(type='submit')
+//                  i.fa.fa-android(aria-hidden='true')
+//                  |  Play Store
